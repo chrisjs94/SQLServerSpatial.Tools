@@ -27,6 +27,3 @@ CREATE FUNCTION dbo.ToGeomUTM(@geom geometry)
 RETURNS GEOMETRY
 AS EXTERNAL NAME [ALMA.SQLSpatial.Tools].[SQLSpatial.Tools.SqlFunctions.SpatialFunctions].[ReprojectGeometryToUTM];
 GO
-
-
-SELECT dbo.TransformToUTM(12.34, -86.78);

@@ -22,7 +22,7 @@ namespace SQLSpatial.Tools.NetFramework.Helpers
         {
             SqlString result = SpatialFunctions.TransformToUTM(point.STY, point.STX);
             string[] parts = result.Value.Split(',');
-            return SqlGeometry.Point(double.Parse(parts[1]), double.Parse(parts[0]), 32616);
+            return SqlGeometry.Point(double.Parse(parts[0]), double.Parse(parts[1]), 32616);
         }
 
         /// <summary>
